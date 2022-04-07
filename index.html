@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Positive Quotes</title>
     <link rel="stylesheet" href="src.css" />
     <link
       rel="stylesheet"
@@ -21,20 +21,17 @@
     />
   </head>
   <body>
-    <!-- Quote Container -->
     <div class="container">
-      <!-- Quote to be Displayed Here -->
       <h1>
         <i class="fas fa-quote-left"></i>
         <span class="quote" id="quote"></span>
         <i class="fas fa-quote-right"></i>
       </h1>
-      <!-- Author to be Displayed Here -->
+
       <p class="author" id="author"></p>
 
       <hr />
       <div class="buttons">
-        <!--Button to tweet the quote -->
         <a
           class="twitter"
           id="tweet"
@@ -45,7 +42,6 @@
           ><i class="fab fa-twitter"></i
         ></a>
 
-        <!--Add an onclick event on 'next quote' button. Upon the click of a button, a new random quote is generated-->
         <button class="next" onclick="getNewQuote()">Next quote</button>
       </div>
     </div>
