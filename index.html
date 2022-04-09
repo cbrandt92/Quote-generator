@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Positive Quotes</title>
+    <title>Be Inspired!</title>
     <link rel="stylesheet" href="src.css" />
     <link
       rel="stylesheet"
@@ -20,29 +20,31 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container">
-      <h1>
-        <i class="fas fa-quote-left"></i>
-        <span class="quote" id="quote"></span>
-        <i class="fas fa-quote-right"></i>
-      </h1>
-
-      <p class="author" id="author"></p>
-
-      <hr />
+  <body class="container d-flex text-center justify-content-center">
+    <div class="wrapper">
+      <header>Be inspired!</header>
+      <div class="content">
+        <div class="quote-area">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote">
+            Never give up because you may never know if the next try is going to
+            be the one that works.
+          </p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="author">
+          <span> _ _ </span> <span class="name">Mary Kay Ash</span>
+        </div>
+      </div>
       <div class="buttons">
-        <a
-          class="twitter"
-          id="tweet"
-          href="https://twitter.com/intent/tweet?text=Greetings"
-          data-size="large"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><i class="fab fa-twitter"></i
-        ></a>
-
-        <button class="next" onclick="getNewQuote()">Next quote</button>
+        <div class="features">
+          <ul>
+            <li class="sound"><i class="fas fa-volume-up"></i></li>
+            <li class="copy"><i class="fas fa-copy"></i></li>
+            <li class="twitter"><i class="fab fa-twitter"></i></li>
+          </ul>
+          <button>New Quote</button>
+        </div>
       </div>
     </div>
     <script src="javascript.js"></script>
