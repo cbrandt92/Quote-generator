@@ -2,12 +2,12 @@
   width: 605px;
   border-radius: 15px;
   padding: 30px 30px 25px;
-  background: white;
-}
-
-.container {
-  background: aquamarine;
-  padding: 200px;
+  background: #b4b4b4;
+  opacity: 85%;
+  z-index: 4;
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
 }
 
 .wrapper header {
@@ -39,6 +39,7 @@
 .content .quote-area {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .content .author {
@@ -74,18 +75,18 @@
   margin: o 5px;
   height: 47px;
   width: 47px;
-  color: aquamarine;
+  color: #252626;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid aquamarine;
+  border: 2px solid #252626;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 .features ul li:hover {
   color: white;
-  background: aquamarine;
+  background: #252626;
 }
 .features button {
   border: none;
@@ -94,11 +95,115 @@
   cursor: pointer;
   font-style: 16px;
   border-radius: 30px;
-  background: aquamarine;
+  background: #252626;
+  color: #b4b4b4;
   transition: all 0.3s ease;
+  color: ;
 }
 
 .features button:hover {
   color: white;
-  background: aquamarine;
+  background: #252626;
+}
+
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.stars {
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+.clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+img {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
 }
